@@ -19,10 +19,13 @@ dependencies = [
 
 [[package]]
 name = "arduino-uno-rust"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "arduino-hal",
+ "embedded-hal 0.2.7",
+ "embedded-hal 1.0.0-rc.3",
  "panic-halt",
+ "ufmt",
 ]
 
 [[package]]

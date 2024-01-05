@@ -3,17 +3,22 @@ panic = "abort"
 lto = true
 opt-level = "s"
 
-
 [package]
 name = "arduino-uno-rust"
 # edition = "2021"
 # rust-version = "1.75"
-version = "0.1.0"
+version = "0.2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 panic-halt = "0.2.0"
+embedded-hal = "1.0.0-rc.3"
+ufmt = "0.2.0"
+
+[dependencies.embedded-hal-v0]
+version = "0.2.3"
+package = "embedded-hal"
 
 [dependencies.arduino-hal]
 git = "https://github.com/Rahix/avr-hal"
