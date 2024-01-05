@@ -17,9 +17,5 @@ fn main() -> ! {
         arduino_hal::delay_ms(50);
         led.toggle();
         arduino_hal::delay_ms(50);
-        // led.toggle();
-        // arduino_hal::delay_ms(100);
-        // led.toggle();
-        // arduino_hal::delay_ms(800);
     }
 }
